@@ -4,5 +4,65 @@
   --tertiary-color: #f5f5f5;
 }
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  min-height: 100vh;
+  background-color: var(--primary-color);
+}
+.hexagonContainer {
+  position: relative;
+  height: 100vh;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+  }
+  100% {
+  }
+}
+.row {
+  display: inline-flex;
+  margin-top: -2rem; /* Ajuste proporcional al tamaño del hexágono */
+  margin-left: -3rem; /* Ajuste para evitar espacios en blanco */
+}
+
+.row:nth-child(even) {
+  margin-left: 0.1rem; /* Ajuste menor para filas alternas */
+}
+.hexagon {
+  position: relative;
+  width: 6.25rem; /* Equivalente a 100px */
+  height: 6.875rem; /* Equivalente a 110px */
+  margin: 0.0625rem; /* Margen equivalente a 1px */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: 2s;
+}
+.hexagon:hover {
+  transition: 0s;
+  background-color: var(--secondary-color);
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 0.25rem; /* Equivalente a 4px */
+  left: 0.25rem;
+  right: 0.25rem;
+  bottom: 0.25rem;
+  background-color: var(--primary-color);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.hexagon:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.02);
 }

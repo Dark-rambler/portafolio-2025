@@ -8,8 +8,8 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="bg-secondary 2xl:px-8">
-      <div className="shadow-lg  rounded-lg "> 
+    <div className="bg-secondary 2xl">
+      <div className="shadow-lg"> 
         <Header />
         {children}
         <Footer />
