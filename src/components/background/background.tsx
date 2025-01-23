@@ -19,7 +19,7 @@ export default function Background() {
   }, []);
 
   return (
-    <div className=" hexagonContainer z-10">
+    <div className=" bg-primary h-screen w-screen fixed z-10 ">
     <div className="grid z-0 ">
       {Array.from({ length: grid.rows }).map((_, rowIndex) => (
         <div

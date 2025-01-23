@@ -9,9 +9,11 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   return (
     <div className="bg-secondary 2xl">
-      <div className="shadow-lg"> 
+      <div className="">
         <Header />
-        {children}
+        <div className="relative backdrop-blur-lg bg-primary z-30  px-24 text-white mt-28 mx-24">
+          {children}
+        </div>
         <Footer />
       </div>
     </div>

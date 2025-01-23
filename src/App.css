@@ -7,11 +7,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: auto;
 }
 body {
   min-height: 100vh;
-  background-color: var(--primary-color);
 }
 .hexagonContainer {
   position: relative;
@@ -65,4 +64,32 @@ body {
   width: 50%;
   height: 100%;
   background: rgba(255, 255, 255, 0.02);
+}
+
+.smallHexagon {
+  position: relative;
+  width: 3.125rem; /* Equivalente a 50px */
+  height: 3.4375rem; /* Equivalente a 55px */
+  margin: 0.03125rem; /* Margen equivalente a 0.5px */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: 2s;
+}
+
+.bigHexagon {
+  position: relative;
+  width: 18.75rem; /* Equivalente a 300px */
+  height: 20.625rem; /* Equivalente a 330px */
+  margin: 0.1875rem; /* Margen equivalente a 3px */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: 2s;
+}
+.bigHexagonReflex {
+  position: relative;
+  width: 18.75rem; /* Equivalente a 300px */
+  height: 20.625rem; /* Equivalente a 330px */
+  margin: 0.1875rem; /* Margen equivalente a 3px */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 35%, 0% 35%, 0% 75%, 0% 25%);
+  transition: 2s;
+  opacity: 0.3;
+  background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color) 30%);
 }

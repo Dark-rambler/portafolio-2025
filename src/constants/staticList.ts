@@ -1,4 +1,4 @@
-import { INavMenuItems } from "../interfaces/constants";
+import { INavMenuItems, ISocialMediaLinks } from "../interfaces/constants";
 
 export const navMenuItems: INavMenuItems[] = [
     {
@@ -10,7 +10,25 @@ export const navMenuItems: INavMenuItems[] = [
         link: "/projects",
     },
     {
-        label: "Contactame",
+        label: "Contáctame",
         link: "/contact",
+    },
+];
+
+export const socialMediaLinks: ISocialMediaLinks[] = [
+    {
+        link: "/",
+        icon: "instagram",
+        hover: "Instagram",
+    },
+    {
+        link: "/",
+        icon: "github",
+        hover: "GitHub",
+    },
+    {
+        link: "/",
+        icon: "linkedin",
+        hover: "LinkedIn",
     },
 ];

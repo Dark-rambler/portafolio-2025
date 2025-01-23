@@ -1,4 +1,10 @@
+import { IconType } from "../components/IconSelect/iconSelect";
+
 export interface INavMenuItems {
-    label: string;
     link: string;
+    label?: string;
+    hover?: string;
+}
+export interface ISocialMediaLinks extends INavMenuItems {
+    icon: IconType;
 }
