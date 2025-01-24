@@ -2,13 +2,14 @@ import { useState } from "react";
 import { labels } from "../../constants/labels";
 import { navMenuItems } from "../../constants/staticList";
 import IconSelect from "../IconSelect/iconSelect";
+import i18next from "i18next";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="fixed w-full z-50" >
-      <div className={"bg-primary text-white flex justify-between items-center md:h-32 md:pe-80 ps-5 py-5" }  >
+      <div className={"bg-primary text-white flex justify-between items-center h-32 md:pe-80 ps-5 py-5" }  >
         <div className="h-full flex items-center">
           <a
             href=""
@@ -52,6 +53,12 @@ export default function Header() {
             </div>
           )}
         </div>
+        <button onClick={()=>i18next.changeLanguage("es")} className="hidden md:block bg-tertiary text-quaternary shadow-md border-tertiary px-4 py-2 rounded-lg my-6 transform active:translate-y-0.5 transition-transform duration-150 hover:bg-tertiary/75 hover:transition-all hover:duration-300 hover:ease-out">
+          es
+        </button>
+        <button onClick={()=>i18next.changeLanguage("en")} className="hidden md:block bg-tertiary text-quaternary shadow-md border-tertiary px-4 py-2 rounded-lg my-6 transform active:translate-y-0.5 transition-transform duration-150 hover:bg-tertiary/75 hover:transition-all hover:duration-300 hover:ease-out">
+          en
+        </button>
       </div>
     </div>
   );

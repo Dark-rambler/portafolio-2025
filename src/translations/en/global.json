@@ -1,0 +1,21 @@
+{
+  "labels": {
+    "pageName": "erg.dev",
+    "position": "Software Developer"
+  },
+  "informationPage": {
+    "hi": "Hi,",
+    "itsMe": "I'm",
+    "description": "I'm a software developer with experience in web application development. I'm passionate about technology and programming, and I'm always looking to learn new things.",
+    "findMe": "Find me on"
+  },
+  "titles": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "button": {
+    "contact": "Contact",
+    "viewProjects": "View Projects"
+  }
+}
