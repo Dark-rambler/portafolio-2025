@@ -91,5 +91,10 @@ body {
   clip-path: polygon(50% 0%, 100% 25%, 100% 35%, 0% 35%, 0% 75%, 0% 25%);
   transition: 2s;
   opacity: 0.3;
-  background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color) 30%);
+  background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color) 20%);
 }
+
+::-webkit-scrollbar {
+  display: none; /* Elimina el scroll de navegadores basados en WebKit */
+}
+
