@@ -3,14 +3,17 @@ import { INavMenuItems, ISocialMediaLinks } from "../interfaces/constants";
 export const navMenuItems: INavMenuItems[] = [
     {
         label: "Inicio",
+        translation: "home",
         link: "/",
     },
     {
         label: "Proyectos",
+        translation: "projects",
         link: "/projects",
     },
     {
         label: "Contáctame",
+        translation: "contact",
         link: "/contact",
     },
 ];

@@ -1,4 +1,9 @@
 {
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
   "labels": {
     "pageName": "erg.dev",
     "position": "Software Developer"

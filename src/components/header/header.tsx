@@ -4,9 +4,11 @@ import { navMenuItems } from "../../constants/staticList";
 import IconSelect from "../IconSelect/iconSelect";
 import i18next from "i18next";
 import { ConfigProvider, Select, Space } from "antd";
+import { useTranslation } from "react-i18next";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [t] = useTranslation("global");
 
   const options = [
     { value: "es", label: "Spanish", emoji: "🇪🇸", desc: "Spanish" },
@@ -37,7 +39,7 @@ export default function Header() {
                 key={index}
                 href={item.link}
               >
-                {item.label}
+                {t("nav." + item?.translation)}
               </a>
             );
           })}

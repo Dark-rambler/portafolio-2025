@@ -2,6 +2,7 @@ import { IconType } from "../components/IconSelect/iconSelect";
 
 export interface INavMenuItems {
     link: string;
+    translation?: string;
     label?: string;
     hover?: string;
 }
