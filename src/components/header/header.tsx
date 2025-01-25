@@ -3,13 +3,25 @@ import { labels } from "../../constants/labels";
 import { navMenuItems } from "../../constants/staticList";
 import IconSelect from "../IconSelect/iconSelect";
 import i18next from "i18next";
+import { ConfigProvider, Select, Space } from "antd";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const options = [
+    { value: "es", label: "Spanish", emoji: "🇪🇸", desc: "Spanish" },
+    { value: "en", label: "English", emoji: "🇺🇸", desc: "English" },
+  ];
+
+  const onChange = (value: string) => i18next.changeLanguage(value);
+
   return (
-    <div className="fixed w-full z-50" >
-      <div className={"bg-primary text-white flex justify-between items-center h-32 md:pe-80 ps-5 py-5" }  >
+    <div className="fixed w-full z-50">
+      <div
+        className={
+          "bg-primary text-white flex justify-between items-center h-32 md:pe-80 ps-5 py-5"
+        }
+      >
         <div className="h-full flex items-center">
           <a
             href=""
@@ -29,14 +41,59 @@ export default function Header() {
               </a>
             );
           })}
+          <span className="ms-5 hidden md:flex items-center">
+            <ConfigProvider
+              theme={{
+                components: {
+                  Select: {
+                    colorBgContainer: "#21272f",
+                    colorTextQuaternary: "white",
+                    colorTextTertiary: "#00bd95",
+                    colorBorder: "#00bd95",
+                    colorText: "white",
+                    optionSelectedColor: "white",
+                    optionSelectedBg: "#00bd95",
+                    colorBgElevated: "#21272f",
+                    colorBgBase: "primary",
+                  },
+                },
+              }}
+            >
+              <Select
+                className="bg-primary border-s-emerald-300 text-white"
+                style={{ width: 120 }}
+                defaultValue={"es"}
+                options={options.map((option) => ({
+                  value: option.value,
+                  label: (
+                    <Space>
+                      <span role="img" aria-label={option.label}>
+                        {option.emoji}
+                      </span>
+                      {option.label}
+                    </Space>
+                  ),
+                }))}
+                onChange={onChange}
+                optionLabelProp="label"
+              />
+            </ConfigProvider>
+          </span>
         </div>
+
         <span
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden  me-10 hover:text-tertiary transition-all duration-300 ease-out"
         >
           <IconSelect icon={menuOpen ? "close" : "menu"} />
         </span>
-        <div className={ menuOpen ? "md:hidden absolute top-32 right-0 bg-primary text-white w-60 h-96 flex flex-col items-center justify-center" : "hidden"}>
+        <div
+          className={
+            menuOpen
+              ? "md:hidden absolute top-32 right-0 bg-primary text-white w-60 h-96 flex flex-col items-center justify-center"
+              : "hidden"
+          }
+        >
           {menuOpen && (
             <div className="absolute top-32 right-0 bg-primary text-white w-60 h-96 flex flex-col items-center justify-center">
               {navMenuItems.map((item, index) => {
@@ -53,12 +110,6 @@ export default function Header() {
             </div>
           )}
         </div>
-        <button onClick={()=>i18next.changeLanguage("es")} className="hidden md:block bg-tertiary text-quaternary shadow-md border-tertiary px-4 py-2 rounded-lg my-6 transform active:translate-y-0.5 transition-transform duration-150 hover:bg-tertiary/75 hover:transition-all hover:duration-300 hover:ease-out">
-          es
-        </button>
-        <button onClick={()=>i18next.changeLanguage("en")} className="hidden md:block bg-tertiary text-quaternary shadow-md border-tertiary px-4 py-2 rounded-lg my-6 transform active:translate-y-0.5 transition-transform duration-150 hover:bg-tertiary/75 hover:transition-all hover:duration-300 hover:ease-out">
-          en
-        </button>
       </div>
     </div>
   );
