@@ -22,7 +22,7 @@ export default function PresentationSection() {
   };
 
   return (
-    <article className="py-24">
+    <article className="py-24 md:px-24">
       <div className="grid md:grid-cols-2  gap-4 mx-auto ">
         <section className="  ">
           <div className="text-3xl flex">

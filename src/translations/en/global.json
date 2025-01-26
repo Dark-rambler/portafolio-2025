@@ -22,5 +22,14 @@
   "button": {
     "downloadCv": "Download CV",
     "viewProjects": "View Projects"
+  },
+  "myServices": {
+    "my": "My",
+    "services": "services",
+    "title": "Software Development",
+    "frontEndTitle": "Front-End Development",
+    "frontEndDescription": "Creation of attractive, responsive and intuitive user interfaces and user experiences according to user requirements and business needs.",
+    "backEndTitle": "Back-End Development",
+    "backEndDescription": "Development of scalable, secure and efficient web applications and web services using modern technologies and good programming practices."
   }
 }

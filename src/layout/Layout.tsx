@@ -11,7 +11,7 @@ export default function Layout({ children }: LayoutProps) {
     <div className="bg-secondary 2xl">
       <div className="">
         <Header />
-        <div className="relative backdrop-blur-lg bg-primary z-30  md:px-24 px-8 text-white mt-28 md:mx-24">
+        <div className="relative backdrop-blur-lg bg-primary z-30 text-white mt-28 md:mx-24">
           {children}
         </div>
         <Footer />
