@@ -1,9 +1,26 @@
+import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { socialMediaLinks } from "../../constants/staticList";
 import IconSelect from "../IconSelect/iconSelect";
+import {
+  SPANISHPDFCVPATH,
+  ENGLISHPDFCVPATH,
+} from "../../constants/staticRoutes";
 
 export default function PresentationSection() {
-  const [t] = useTranslation("global");
+  const currentLanguageCvPath = useRef<string>(SPANISHPDFCVPATH);
+  const [t, i18n] = useTranslation("global");
+
+  const downloadCv = () => {
+    if (i18n.language === "es") {
+      currentLanguageCvPath.current = SPANISHPDFCVPATH;
+      window.open(currentLanguageCvPath.current, "_blank");
+    } else {
+      currentLanguageCvPath.current = ENGLISHPDFCVPATH;
+      window.open(currentLanguageCvPath.current, "_blank");
+    }
+  };
+
   return (
     <article className="py-24">
       <div className="grid md:grid-cols-2  gap-4 mx-auto ">
@@ -31,16 +48,23 @@ export default function PresentationSection() {
           <div className="my-4">
             <p>{t("informationPage.description")}</p>
           </div>
-          <button className="bg-tertiary text-quaternary shadow-md  border-tertiary px-4 py-2 rounded-lg my-6 transform active:translate-y-0.5 transition-transform duration-150 hover:bg-tertiary/75 hover:transition-all hover:duration-300 hover:ease-out">
-            {t("button.contact")}
+          <button
+            className="cursor-pointer mt-5 bg-tertiary text-quaternary shadow-md  border-tertiary px-4 py-2 rounded-lg 
+           my-6 transform active:translate-y-0.5 transition-transform 
+           duration-150 hover:bg-tertiary/75 hover:transition-all hover:duration-300
+            hover:ease-out"
+            onClick={() => downloadCv()}
+          >
+            {t("button.downloadCv")}
           </button>
-          <div className="flex items-center space-x-3 h-20">
+          <div className="flex items-center  space-x-3 h-20">
             <p>{t("informationPage.findMe")}</p>
             {socialMediaLinks.map((item, index) => {
               return (
                 <a
                   key={index}
                   href={item.link}
+                  target="_blank"
                   className=" flex justify-center items-center hover:bg-tertiary/25 smallHexagon bg-tertiary/50 animate-blink cursor-pointer  hover:scale-110 transform active:translate-y-0.5 transition-transform duration-150 shadow-md"
                 >
                   <span className=" hover:scale-110 transform active:translate-y-0.5 transition-transform duration-150">

@@ -1,5 +1,5 @@
 import { INavMenuItems, ISocialMediaLinks } from "../interfaces/constants";
-
+import { GITHUB, INSTAGRAM, LINKEDIN } from "./staticRoutes";
 export const navMenuItems: INavMenuItems[] = [
     {
         label: "Inicio",
@@ -20,17 +20,17 @@ export const navMenuItems: INavMenuItems[] = [
 
 export const socialMediaLinks: ISocialMediaLinks[] = [
     {
-        link: "/",
+        link: LINKEDIN,
         icon: "instagram",
         hover: "Instagram",
     },
     {
-        link: "/",
+        link: GITHUB,
         icon: "github",
         hover: "GitHub",
     },
     {
-        link: "/",
+        link: INSTAGRAM,
         icon: "linkedin",
         hover: "LinkedIn",
     },
