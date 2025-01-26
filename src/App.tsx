@@ -1,7 +1,8 @@
 import "./App.css";
 import Background from "./components/background/background";
-import MyServicesSection from "./components/myServicesSection/myServices";
-import PresentationSection from "./components/presentation/presentation";
+import MyServicesSection from "./components/sections/myServicesSection/myServices";
+import PresentationSection from "./components/sections/presentation/presentation";
+import RecentProjectsSection from "./components/sections/recentProjects/recentProjects";
 import Layout from "./layout/Layout";
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
         <Background />
         <Layout>
           <PresentationSection />
-          <MyServicesSection/>
+          <MyServicesSection />
+          <RecentProjectsSection />
         </Layout>
       </div>
     </>

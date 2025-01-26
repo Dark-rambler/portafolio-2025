@@ -617,6 +617,10 @@ video {
   margin-inline-end: 0.5rem;
 }
 
+.me-3 {
+  margin-inline-end: 0.75rem;
+}
+
 .ml-8 {
   margin-left: 2rem;
 }
@@ -840,6 +844,11 @@ video {
   fill: #00bd95;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-10 {
   padding: 2.5rem;
 }
@@ -894,6 +903,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-5xl {
@@ -1039,12 +1053,12 @@ video {
     height: 0.25rem;
   }
 
-  .md\:h-full {
-    height: 100%;
-  }
-
   .md\:h-14 {
     height: 3.5rem;
+  }
+
+  .md\:h-full {
+    height: 100%;
   }
 
   .md\:grid-cols-2 {

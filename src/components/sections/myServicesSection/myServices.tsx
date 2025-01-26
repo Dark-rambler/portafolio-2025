@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import IconSelect from "../IconSelect/iconSelect";
+import IconSelect from "../../IconSelect/iconSelect";
 
 export default function MyServicesSection() {
   const [t] = useTranslation("global");

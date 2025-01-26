@@ -1,11 +1,11 @@
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { socialMediaLinks } from "../../constants/staticList";
-import IconSelect from "../IconSelect/iconSelect";
+import { socialMediaLinks } from "../../../constants/staticList";
+import IconSelect from "../../IconSelect/iconSelect";
 import {
   SPANISHPDFCVPATH,
   ENGLISHPDFCVPATH,
-} from "../../constants/staticRoutes";
+} from "../../../constants/staticRoutes";
 
 export default function PresentationSection() {
   const currentLanguageCvPath = useRef<string>(SPANISHPDFCVPATH);

@@ -4,8 +4,13 @@ export interface INavMenuItems {
     link: string;
     translation?: string;
     label?: string;
-    hover?: string;
+    tooltip?: string;
 }
 export interface ISocialMediaLinks extends INavMenuItems {
     icon: IconType;
+}
+export interface IProject extends INavMenuItems {
+    title: string;
+    description: string;
+    image: string;
 }
