@@ -31,5 +31,10 @@
     "frontEndDescription": "Creation of attractive, responsive and intuitive user interfaces and user experiences according to user requirements and business needs.",
     "backEndTitle": "Back-End Development",
     "backEndDescription": "Development of scalable, secure and efficient web applications and web services using modern technologies and good programming practices."
+  },
+  "recentProjects": {
+    "recent": "Recent",
+    "projects": "projects",
+    "title": "Some of my recent projects"
   }
 }

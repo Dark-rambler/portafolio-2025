@@ -91,10 +91,52 @@ body {
   clip-path: polygon(50% 0%, 100% 25%, 100% 35%, 0% 35%, 0% 75%, 0% 25%);
   transition: 2s;
   opacity: 0.3;
-  background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color) 20%);
+  background: linear-gradient(
+    to bottom,
+    var(--secondary-color),
+    var(--primary-color) 20%
+  );
 }
 
 ::-webkit-scrollbar {
   display: none; /* Elimina el scroll de navegadores basados en WebKit */
 }
 
+.Carousel .ant-carousel {
+  .slick-dots {
+    position: static;
+    margin-top: 20px;
+
+    li button {
+      height: 16px;
+      border-radius: 4px;
+      background-color: gray;
+    }
+  }
+}
+
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next,
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover,
+.ant-carousel .slick-prev:focus,
+.ant-carousel .slick-next:focus {
+  font-size: inherit;
+  color: currentColor !important;
+}
+
+.ant-carousel .slick-prev::before {
+  color: currentColor !important;
+}
+
+.slick-arrow.slick-prev {
+  font-size: 20px !important;
+}
+
+.ant-carousel .slick-next::before {
+  color: black !important;
+}
+
+.slick-arrow.slick-next {
+  font-size: 20px !important;
+}

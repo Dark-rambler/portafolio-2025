@@ -31,5 +31,10 @@
     "frontEndDescription": "Creación de interfaces de usuario y experiencias de usuario atractivas, responsivas e intuitivas de acuerdo a los requerimientos de los usuarios y las necesidades del negocio.",
     "backEndTitle": "Desarrollo Back-End",
     "backEndDescription": "Desarrollo de aplicaciones web y servicios web escalables, seguros y eficientes, utilizando tecnologías modernas y buenas prácticas de programación."
+  },
+  "recentProjects": {
+    "recent": "Projectos",
+    "projects": "recientes",
+    "title": "Algunos de mis proyectos recientes"
   }
 }
