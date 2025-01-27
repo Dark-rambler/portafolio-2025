@@ -5,12 +5,12 @@
     "contact": "Contact"
   },
   "labels": {
-    "pageName": "erg.dev",
+    "pageName": "Edwin García",
     "position": "Software Developer"
   },
   "informationPage": {
     "hi": "Hi,",
-    "itsMe": "I'm",
+    "itsMe": "My name is",
     "description": "I'm a software developer with experience in web application development. I'm passionate about technology and programming, and I'm always looking to learn new things.",
     "findMe": "Find me on"
   },

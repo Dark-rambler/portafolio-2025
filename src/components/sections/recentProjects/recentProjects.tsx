@@ -51,7 +51,7 @@ export default function RecentProjectsSection() {
           slidesToShow={3}
           autoplay={true}
           autoplaySpeed={3000}
-          arrows={true}
+          arrows={false}
           draggable={true}
         >
           {projects.map((project, index) => (

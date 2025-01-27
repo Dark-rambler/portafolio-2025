@@ -5,7 +5,7 @@
     "contact": "Contáctame"
   },
   "labels": {
-    "pageName": "erg.dev",
+    "pageName": "Edwin García",
     "position": "Software Developer"
   },
   "titles": {
@@ -19,7 +19,7 @@
   },
   "informationPage": {
     "hi": "Hola,",
-    "itsMe": "Soy yo",
+    "itsMe": "Mi nombre es",  
     "description": "Soy un desarrollador de software con experiencia en el desarrollo de aplicaciones web. Me apasiona la tecnología y la programación, y siempre estoy buscando aprender cosas nuevas.",
     "findMe": "Sígueme en"
   },
