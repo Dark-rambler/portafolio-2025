@@ -61,7 +61,6 @@ export default function RecentProjectsSection() {
             >
               <div className=" bg-tertiary/50 rounded-lg flex justify-center items-center">
                 <img src={project.image} />
-                <div className=" w-3 h-3 bg-tertiary"></div>
               </div>
 
               <p className="text-center text-quaternary mt-3">
