@@ -20,7 +20,7 @@ export const navMenuItems: INavMenuItems[] = [
 
 export const socialMediaLinks: ISocialMediaLinks[] = [
     {
-        link: LINKEDIN,
+        link: INSTAGRAM,
         icon: "instagram",
         tooltip: "Instagram",
     },
@@ -30,7 +30,7 @@ export const socialMediaLinks: ISocialMediaLinks[] = [
         tooltip: "GitHub",
     },
     {
-        link: INSTAGRAM,
+        link: LINKEDIN,
         icon: "linkedin",
         tooltip: "LinkedIn",
     },

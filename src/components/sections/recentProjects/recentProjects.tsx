@@ -6,7 +6,7 @@ export default function RecentProjectsSection() {
   const [t] = useTranslation("global");
   return (
     <article className=" px-12 md:px-24 py-24 bg-primary">
-      <div className=" flex justify-center">
+      <div className=" md:flex justify-center">
         <div className="text-quaternary me-3 text-4xl">
           {t("recentProjects.recent")}
         </div>
@@ -57,7 +57,7 @@ export default function RecentProjectsSection() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className=" p-5 cursor-pointer  hover:scale-110 transform transition duration-500 ease-in-out"
+              className=" p-2 mb-6 cursor-pointer  hover:scale-110 transform transition duration-500 ease-in-out"
             >
               <div className=" bg-tertiary/50 rounded-lg flex justify-center items-center">
                 <img src={project.image} />
