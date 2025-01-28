@@ -36,5 +36,10 @@
     "recent": "Projectos",
     "projects": "recientes",
     "title": "Algunos de mis proyectos recientes"
+  },
+  "mySkills": {
+    "my": "Mis",
+    "skills": "habilidades",
+    "title": "Tecnologías y habilidades"
   }
 }

@@ -36,5 +36,10 @@
     "recent": "Recent",
     "projects": "projects",
     "title": "Some of my recent projects"
+  },
+  "mySkills": {
+    "my": "My",
+    "skills": "skills",
+    "title": "Technologies and Skills"
   }
 }
