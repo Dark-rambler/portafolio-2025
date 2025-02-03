@@ -27,7 +27,7 @@ export default function Header() {
         <div className="h-full flex items-center">
           <a
             href=""
-            className="bg-[url('/common/logo1.png')] h-16 w-16  -rotate-12 bg-cover "
+            className="bg-[url('/common/logo1.png')] h-16 w-16 -rotate-12 bg-cover hidden "
           ></a>
           <h2 className="font-mono text-2xl ms-2">{labels.pageName}</h2>
         </div>

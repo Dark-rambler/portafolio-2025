@@ -5,6 +5,6 @@ export class navItems {
 }
 
 export const labels = {
-    pageName: "erg.dev",
+    pageName: "Edwin García",
 }
 

@@ -31,7 +31,7 @@ export default function PresentationSection() {
             </div>
             <div className="text-tertiary">{t("informationPage.itsMe")}</div>
           </div>
-          <h1 className="text-tertiary text-5xl h-14 font-semibold">
+          <h1 className="text-tertiary text-4xl md:text-5xl h-16 font-semibold overflow-visible md:h-14">
             {t("labels.pageName")}
           </h1>
           <section className="flex justify-center items-center md:h-1 md:overflow-hidden ">

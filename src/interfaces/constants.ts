@@ -14,3 +14,11 @@ export interface IProject extends INavMenuItems {
     description: string;
     image: string;
 }
+
+export interface ITechnologies {
+    name: string;
+    icon: IconType;
+    description : string;
+    translation: string;
+    color?: string;
+}
