@@ -27,7 +27,7 @@ export default function MySkillsSection() {
             className=" flex flex-col 
              items-center mt-8 py-4"
           >
-            <div className={`w-32 h-32 fill-slate-400/10 ${"  hover:fill-"+technology.color} cursor-pointer`} >
+            <div className={`w-32 h-32 fill-slate-400/10 duration-150 transition-all  ${"   hover:fill-"+technology.color} cursor-pointer`} >
               <IconSelect
                 icon={technology.icon}
                 color=""
@@ -36,7 +36,8 @@ export default function MySkillsSection() {
               {/* <div className="mt-2 md:mt-0 md:ml-4">
                 <h2 className="text-quaternary text-2xl font-semibold">{technology.name}</h2>
                 <p className="text-tertiary">{technology.description}</p>
-              </div> */}
+              </div> 
+              */}
             </div>
             <div className="mt-4 md:mt-0">
               <p className="text-tertiary">{t(technology.translation)}</p>
