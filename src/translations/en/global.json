@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "labels": {
+    "pageName": "Edwin García",
+    "position": "Software Developer"
+  },
+  "informationPage": {
+    "hi": "Hi,",
+    "itsMe": "My name is",
+    "description": "I'm a software developer with experience in web application development. I'm passionate about technology and programming, and I'm always looking to learn new things.",
+    "findMe": "Find me on"
+  },
+  "titles": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "button": {
+    "downloadCv": "Download CV",
+    "viewProjects": "View Projects"
+  },
+  "myServices": {
+    "my": "My",
+    "services": "services",
+    "title": "Software Development",
+    "frontEndTitle": "Front-End Development",
+    "frontEndDescription": "Creation of attractive, responsive and intuitive user interfaces and user experiences according to user requirements and business needs.",
+    "backEndTitle": "Back-End Development",
+    "backEndDescription": "Development of scalable, secure and efficient web applications and web services using modern technologies and good programming practices."
+  },
+  "recentProjects": {
+    "recent": "Recent",
+    "projects": "projects",
+    "title": "Some of my recent projects"
+  },
+  "mySkills": {
+    "my": "My",
+    "skills": "skills",
+    "title": "Technologies and Skills"
+  }
+}

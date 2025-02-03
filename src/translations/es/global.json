@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "contact": "Contáctame"
+  },
+  "labels": {
+    "pageName": "Edwin García",
+    "position": "Software Developer"
+  },
+  "titles": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "contact": "Contáctame"
+  },
+  "button": {
+    "downloadCv": "Descargar CV",
+    "viewProjects": "Ver Proyectos"
+  },
+  "informationPage": {
+    "hi": "Hola,",
+    "itsMe": "Mi nombre es",  
+    "description": "Soy un desarrollador de software con experiencia en el desarrollo de aplicaciones web. Me apasiona la tecnología y la programación, y siempre estoy buscando aprender cosas nuevas.",
+    "findMe": "Sígueme en"
+  },
+  "myServices": {
+    "my": "Mis",
+    "services": "Servicios",
+    "title": "Desarrollo de software",
+    "frontEndTitle": "Desarrollo Front-End",
+    "frontEndDescription": "Creación de interfaces de usuario y experiencias de usuario atractivas, responsivas e intuitivas de acuerdo a los requerimientos de los usuarios y las necesidades del negocio.",
+    "backEndTitle": "Desarrollo Back-End",
+    "backEndDescription": "Desarrollo de aplicaciones web y servicios web escalables, seguros y eficientes, utilizando tecnologías modernas y buenas prácticas de programación."
+  },
+  "recentProjects": {
+    "recent": "Projectos",
+    "projects": "recientes",
+    "title": "Algunos de mis proyectos recientes"
+  },
+  "mySkills": {
+    "my": "Mis",
+    "skills": "habilidades",
+    "title": "Tecnologías y habilidades"
+  }
+}
