@@ -29,7 +29,7 @@ export default function Header() {
             href=""
             className="bg-[url('/common/logo1.png')] h-16 w-16 -rotate-12 bg-cover hidden "
           ></a>
-          <h2 className="font-mono text-2xl ms-2">{labels.pageName}</h2>
+          <h2 className="font-mono cursor-pointer hover:text-tertiary transition-all hover:animate-pulse text-2xl ms-2">{labels.pageName}</h2>
         </div>
         <div className=" hidden md:visible md:text-quaternary md:bg-primary md:h-full md:flex md:justify-center md:items-center">
           {navMenuItems.map((item, index) => {

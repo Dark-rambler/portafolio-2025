@@ -4,18 +4,25 @@ export const navMenuItems: INavMenuItems[] = [
     {
         label: "Inicio",
         translation: "home",
-        link: "/",
+        link: "#presentation",
+    },
+    {
+        label: "Servicios",
+        translation: "services",
+        link: "#services",
     },
     {
         label: "Proyectos",
         translation: "projects",
-        link: "/projects",
+        link: "#projects",
     },
     {
-        label: "Contáctame",
-        translation: "contact",
-        link: "/contact",
+        label: "Habilidades",
+        translation: "skills",
+        link: "#skills",
     },
+    
+
 ];
 
 export const socialMediaLinks: ISocialMediaLinks[] = [
@@ -38,28 +45,32 @@ export const socialMediaLinks: ISocialMediaLinks[] = [
 
 export const projects: IProject[] = [
     {
-        title: "Proyecto 1",
+        title: "FunFit",
         description: "Descripción del proyecto 1",
-        image: "https://images.squarespace-cdn.com/content/v1/5e13e7e8e3a0d42924a7e3e9/5f2ed303-9c7e-44aa-a918-36a0d3811fc0/Amazon_Thumbnail_1600x1600.jpg?format=1500w",
+        image: "/common/static/images/projects/funfit.webp",
         link: "/project1",
+        business: "FunFit"
     },
     {
-        title: "Proyecto 2",
+        title: "EndeSys ERP",
         description: "Descripción del proyecto 2",
-        image: "https://images.squarespace-cdn.com/content/v1/5e13e7e8e3a0d42924a7e3e9/5f2ed303-9c7e-44aa-a918-36a0d3811fc0/Amazon_Thumbnail_1600x1600.jpg?format=1500w",
+        image: "/common/static/images/projects/endeErp.webp",
         link: "/project2",
+        business: "Ende Servicios y Construcciones"
     },
     {
-        title: "Proyecto 3",
+        title: "TechoBol sistema de finanzas",
         description: "Descripción del proyecto 3",
-        image: "https://images.squarespace-cdn.com/content/v1/5e13e7e8e3a0d42924a7e3e9/5f2ed303-9c7e-44aa-a918-36a0d3811fc0/Amazon_Thumbnail_1600x1600.jpg?format=1500w",
+        image: "/common/static/images/projects/finanzaSys.webp",
         link: "/project3",
+        business: "TechoBol"
     },
     {
-        title: "Proyecto 4",
+        title: "Sistema de envio masivo de mensajes",
         description: "Descripción del proyecto 4",
-        image: "https://images.squarespace-cdn.com/content/v1/5e13e7e8e3a0d42924a7e3e9/5f2ed303-9c7e-44aa-a918-36a0d3811fc0/Amazon_Thumbnail_1600x1600.jpg?format=1500w",
+        image: "/common/static/images/projects/agilSoftSys.webp",
         link: "/project4",
+        business: "AgilSoft"
     }
 ]
 
@@ -115,11 +126,11 @@ export const myTechnologies: ITechnologies[] = [
         color: "blue-800"
     },
     {
-        name: "Express",
-        icon: "express",
-        description: "Express es un marco de aplicación web de back-end para Node.js.",
-        translation: "express",
-        color: "green-500"
+        name: "TypeScript",
+        icon: "typescript",
+        description: "TypeScript es un lenguaje de programación de código abierto desarrollado y mantenido por Microsoft.",
+        translation: "typeScript",
+        color: "blue-500"
     },
     {
         name: "Firebase",

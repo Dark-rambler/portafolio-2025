@@ -12,7 +12,7 @@ export default function MySkillsSection() {
   , []);
 
   return (
-    <article className="py-12 px-12 md:px-24 bg-secondary">
+    <article className="py-12 px-12 md:px-24 bg-secondary" id="skills">
       <div className="flex ">
         <div className="me-2"> {t("mySkills.my")}</div>{" "}
         <div className="text-tertiary ">{t("mySkills.skills")}</div>

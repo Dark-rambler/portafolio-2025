@@ -1,7 +1,9 @@
 {
   "nav": {
     "home": "Inicio",
+    "services": "Servicios",
     "projects": "Proyectos",
+    "skills": "habilidades",
     "contact": "Contáctame"
   },
   "labels": {
@@ -33,7 +35,7 @@
     "backEndDescription": "Desarrollo de aplicaciones web y servicios web escalables, seguros y eficientes, utilizando tecnologías modernas y buenas prácticas de programación."
   },
   "recentProjects": {
-    "recent": "Projectos",
+    "recent": "Proyectos",
     "projects": "recientes",
     "title": "Algunos de mis proyectos recientes"
   },
