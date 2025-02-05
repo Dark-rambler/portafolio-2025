@@ -13,7 +13,9 @@ function App() {
       <div className="font-mono">
         <Background />
         <Layout>
-          <PresentationSection />
+          <div className="2xl:min-h-[62vh]">
+            <PresentationSection />
+          </div>
           <MyServicesSection />
           <RecentProjectsSection />
           <MySkillsSection />
