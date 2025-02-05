@@ -4,7 +4,7 @@ import IconSelect from "../../IconSelect/iconSelect";
 export default function MyServicesSection() {
   const [t] = useTranslation("global");
   return (
-    <article className="py-12 px-12  md:px-24 bg-secondary">
+    <article className="py-12 px-12  md:px-24 bg-secondary" id="services">
       <div className="flex ">
         <div className="me-2"> {t("myServices.my")}</div>{" "}
         <div className="text-tertiary ">{t("myServices.services")}</div>

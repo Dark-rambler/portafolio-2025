@@ -22,7 +22,7 @@ export default function PresentationSection() {
   };
 
   return (
-    <article className="py-24 md:px-24 px-12 ">
+    <article className="py-24 md:px-24 px-12 " id="presentation">
       <div className="grid md:grid-cols-2  gap-4 mx-auto ">
         <section className="  ">
           <div className="text-3xl flex">
@@ -65,7 +65,9 @@ export default function PresentationSection() {
                   key={index}
                   href={item.link}
                   target="_blank"
-                  className=" flex justify-center items-center hover:bg-tertiary/25 smallHexagon bg-tertiary/50 animate-blink cursor-pointer  hover:scale-110 transform active:translate-y-0.5 transition-transform duration-150 shadow-md"
+                  className=" flex justify-center items-center hover:bg-tertiary/25 smallHexagon bg-tertiary/50 animate-pulse hover:animate-none 
+                  cursor-pointer  hover:scale-110 transform active:translate-y-0.5
+                   transition-transform duration-150 shadow-md"
                 >
                   <span className=" hover:scale-110 transform active:translate-y-0.5 transition-transform duration-150">
                     <IconSelect icon={item.icon} />
