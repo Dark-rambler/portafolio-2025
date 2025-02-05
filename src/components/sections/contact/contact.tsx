@@ -73,7 +73,7 @@ export default function Contact() {
             onClick={sendMessage}
           >
             <IconSelect
-              icon="instagram"
+              icon="whatsapp"
               classNames="text-white me-2"
               color="currentColor"
             />
