@@ -1,20 +1,14 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { labels } from "../../constants/labels";
 import { navMenuItems } from "../../constants/staticList";
 import IconSelect from "../IconSelect/iconSelect";
 import i18next from "i18next";
-import { ConfigProvider, Modal, Select, Space } from "antd";
+import { ConfigProvider, Select, Space } from "antd";
 import { useTranslation } from "react-i18next";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [t] = useTranslation("global");
-  const [visible, setVisible] = useState(false);
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setVisible(true);
-    }
-  }, []);
 
   const options = [
     { value: "es", label: "Spanish", emoji: "🇪🇸", desc: "Spanish" },
@@ -25,18 +19,6 @@ export default function Header() {
 
   return (
     <div className="fixed w-full z-50">
-      <Modal
-        title={t("Este portafolio aún está en construcción")}
-        visible={visible}
-        onOk={() => setVisible(false)}
-        cancelButtonProps={{ style: { display: "none" } }}
-      >
-        <p>
-          Actualmente estoy trabajando en la construccion de mi portafolio por
-          lo cual es posible que encuentres errores o secciones incompletas.
-          Gracias por tu comprensión.
-        </p>
-      </Modal>
       <div
         className={
           "bg-primary text-white flex justify-between items-center h-32 md:pe-80 ps-5 py-5"
@@ -47,9 +29,7 @@ export default function Header() {
             href=""
             className="bg-[url('/common/logo1.png')] h-16 w-16 -rotate-12 bg-cover hidden "
           ></a>
-          <h2 className="font-mono cursor-pointer hover:text-tertiary transition-all hover:animate-pulse text-2xl ms-2">
-            {labels.pageName}
-          </h2>
+          <h2 className="font-mono cursor-pointer hover:text-tertiary transition-all hover:animate-pulse text-2xl ms-2">{labels.pageName}</h2>
         </div>
         <div className=" hidden md:visible md:text-quaternary md:bg-primary md:h-full md:flex md:justify-center md:items-center">
           {navMenuItems.map((item, index) => {

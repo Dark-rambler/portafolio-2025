@@ -26,18 +26,21 @@ export default function PresentationSection() {
   return (
     <article className="py-24 md:px-24 px-12 " id="presentation">
       <div className=" ">
-        <QueueAnim delay={600} className="queue-simple grid md:grid-cols-2  gap-4 mx-auto">
+        <QueueAnim
+          delay={600}
+          className="queue-simple grid md:grid-cols-2  gap-4 mx-auto"
+        >
           <section key={"1"} className="  ">
-            <div  className="text-3xl flex">
+            <div className="text-3xl flex">
               <div className="text-quaternary me-2">
                 {t("informationPage.hi")}
               </div>
               <div className="text-tertiary">{t("informationPage.itsMe")}</div>
             </div>
-            <h1  className="text-tertiary text-4xl md:text-5xl h-16 font-semibold overflow-visible md:h-14">
+            <h1 className="text-tertiary text-4xl md:text-5xl h-16 font-semibold overflow-visible md:h-14">
               {t("labels.pageName")}
             </h1>
-            <section className="flex justify-center items-center md:h-1 md:overflow-hidden ">
+            <section className="flex justify-center items-center md:hidden md:overflow-hidden ">
               <div>
                 <div className="bigHexagon bg-tertiary/50 md:bg-transparent flex justify-center items-center "></div>
                 <div className="h-20 overflow-hidden ">
@@ -80,9 +83,13 @@ export default function PresentationSection() {
               })}
             </div>
           </section>
-          <section key={"2"} className="md:flex md:justify-center md:items-center hidden overflow-hidden md:h-full ">
+          <section
+            key={"2"}
+            className="md:flex md:justify-center md:items-center hidden overflow-hidden md:h-full "
+          >
             <div>
-              <div className="bigHexagon bg-tertiary/50 flex justify-center items-center"></div>
+              <div className="bigHexagon bg-tertiary/50 flex justify-center items-center">
+              </div>
               <div className="h-16 overflow-hidden">
                 <div className="bigHexagonReflex bg-tertiary/50 flex justify-center items-center"></div>
               </div>
