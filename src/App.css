@@ -141,3 +141,11 @@ body {
 .slick-arrow.slick-next {
   font-size: 20px !important;
 }
+
+.required {
+  color: red;
+}
+.required::after {
+  content: "*";
+  
+}
