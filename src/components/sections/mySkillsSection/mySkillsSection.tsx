@@ -20,18 +20,18 @@ export default function MySkillsSection() {
       <h1 className="text-quaternary mt-4 text-5xl overflow-visible md:h-14 font-semibold">
         {t("mySkills.title")}
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mt-8">
+      <div className="grid grid-cols-3 md:grid-cols-5 gap-4 mt-8">
         {myTechnologies.map((technology, index) => (
           <div
             key={index}
             className=" flex flex-col 
              items-center mt-8 py-4"
           >
-            <div className={`w-32 h-32 fill-slate-400/10 duration-150 transition-all  ${"   hover:fill-"+technology.color} cursor-pointer`} >
+            <div className={`md:w-32 md:h-32 w-15  h-15 fill-slate-400/10 duration-150 transition-all  ${"   hover:fill-"+technology.color} cursor-pointer`} >
               <IconSelect
                 icon={technology.icon}
                 color=""
-                classNames="w-32 h-32 "
+                classNames="md:w-32  md:h-32 w-15  h-15 "
               />
               {/* <div className="mt-2 md:mt-0 md:ml-4">
                 <h2 className="text-quaternary text-2xl font-semibold">{technology.name}</h2>
