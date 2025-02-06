@@ -18,7 +18,7 @@ export default function Header() {
   const onChange = (value: string) => i18next.changeLanguage(value);
 
   return (
-    <div className="fixed w-full z-50">
+    <div className="fixed w-full z-40 top-0">
       <div
         className={
           "bg-primary text-white flex justify-between items-center h-32 md:pe-80 ps-5 py-5"
@@ -29,7 +29,9 @@ export default function Header() {
             href=""
             className="bg-[url('/common/logo1.png')] h-16 w-16 -rotate-12 bg-cover hidden "
           ></a>
-          <h2 className="font-mono cursor-pointer hover:text-tertiary transition-all hover:animate-pulse text-2xl ms-2">{labels.pageName}</h2>
+          <h2 className="font-mono cursor-pointer hover:text-tertiary transition-all hover:animate-pulse text-2xl ms-2">
+            {labels.pageName}
+          </h2>
         </div>
         <div className=" hidden md:visible md:text-quaternary md:bg-primary md:h-full md:flex md:justify-center md:items-center">
           {navMenuItems.map((item, index) => {
@@ -89,28 +91,62 @@ export default function Header() {
         >
           <IconSelect icon={menuOpen ? "close" : "menu"} />
         </span>
-        <div
-          className={
-            menuOpen
-              ? "md:hidden absolute top-32 right-0 bg-primary text-white w-60 h-96 flex flex-col items-center justify-center"
-              : "hidden"
-          }
-        >
-          {menuOpen && (
-            <div className="absolute top-32 right-0 bg-primary text-white w-60 h-96 flex flex-col items-center justify-center">
-              {navMenuItems.map((item, index) => {
-                return (
-                  <a
-                    className="hover:text-tertiary my-4"
-                    key={index}
-                    href={item.link}
-                  >
-                    {item.label}
-                  </a>
-                );
-              })}
-            </div>
-          )}
+      </div>
+      <div
+        className={
+          menuOpen
+            ? "md:hidden absolute top-32 right-0 bg-primary text-white w-full  flex flex-col transition-all z-20 duration-300 ease-out"
+            : " absolute min-h-40 -top-32 right-0 bg-primary text-white w-full flex flex-col transition-all duration-300 ease-out z-10 "
+        }
+      >
+        <div className={menuOpen ? "flex flex-col  mb-8" : ""}>
+          {navMenuItems.map((item, index) => {
+            return (
+              <a
+                className="hover:text-tertiary mb-3 transition-all duration-700 ease-out mx-7 "
+                key={index}
+                href={item.link}
+              >
+                {t("nav." + item?.translation)}
+              </a>
+            );
+          })}
+          <ConfigProvider
+            theme={{
+              components: {
+                Select: {
+                  colorBgContainer: "#21272f",
+                  colorTextQuaternary: "white",
+                  colorTextTertiary: "#00bd95",
+                  colorBorder: "#00bd95",
+                  colorText: "white",
+                  optionSelectedColor: "white",
+                  optionSelectedBg: "#00bd95",
+                  colorBgElevated: "#21272f",
+                  colorBgBase: "primary",
+                },
+              },
+            }}
+          >
+            <Select
+              className="bg-primary mx-7 border-s-emerald-300 text-white"
+              style={{ width: 120 }}
+              defaultValue={"es"}
+              options={options.map((option) => ({
+                value: option.value,
+                label: (
+                  <Space>
+                    <span role="img" aria-label={option.label}>
+                      {option.emoji}
+                    </span>
+                    {option.label}
+                  </Space>
+                ),
+              }))}
+              onChange={onChange}
+              optionLabelProp="label"
+            />
+          </ConfigProvider>
         </div>
       </div>
     </div>
