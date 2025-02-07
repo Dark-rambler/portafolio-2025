@@ -2,7 +2,9 @@
   "nav": {
     "home": "Home",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "services": "Services",
+    "skills": "Skills"
   },
   "labels": {
     "pageName": "Edwin García",

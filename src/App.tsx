@@ -13,7 +13,7 @@ function App() {
       <div className="font-mono">
         <Background />
         <Layout>
-          <div className="2xl:min-h-[62vh]">
+          <div className="2xl:min-h-[62vh] min-h-[100vh] flex flex-col justify-center items-center">
             <PresentationSection />
           </div>
           <MyServicesSection />

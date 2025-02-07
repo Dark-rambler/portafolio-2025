@@ -18,10 +18,10 @@ export default function Header() {
   const onChange = (value: string) => i18next.changeLanguage(value);
 
   return (
-    <div className="fixed w-full z-40 top-0">
+    <div className="fixed w-full  z-40 top-0">
       <div
         className={
-          "bg-primary text-white flex justify-between items-center h-32 md:pe-80 ps-5 py-5"
+          "bg-secondary lg:bg-primary text-white z-40 flex justify-between items-center h-32 md:pe-80 ps-5 py-5"
         }
       >
         <div className="h-full flex items-center">
@@ -95,11 +95,11 @@ export default function Header() {
       <div
         className={
           menuOpen
-            ? "md:hidden absolute top-32 right-0 bg-primary text-white w-full  flex flex-col transition-all z-20 duration-300 ease-out"
-            : " absolute min-h-40 -top-32 right-0 bg-primary text-white w-full flex flex-col transition-all duration-300 ease-out z-10 "
+            ? "md:hidden absolute top-32 right-0 bg-secondary text-white w-full  flex flex-col transition-all  duration-300 ease-out -z-10"
+            : " absolute min-h-40 -top-44 right-0 bg-secondary text-white w-full flex flex-col transition-all duration-300 ease-out  -z-10 "
         }
       >
-        <div className={menuOpen ? "flex flex-col  mb-8" : ""}>
+        <div className={menuOpen ? "flex flex-col  my-6" : "flex flex-col "}>
           {navMenuItems.map((item, index) => {
             return (
               <a
