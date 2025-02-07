@@ -4,7 +4,7 @@ import IconSelect from "../../IconSelect/iconSelect";
 export default function MyServicesSection() {
   const [t] = useTranslation("global");
   return (
-    <article className="py-12 px-12  md:px-24 bg-secondary">
+    <article className="py-12 px-12  md:px-24 bg-secondary" id="services">
       <div className="flex ">
         <div className="me-2"> {t("myServices.my")}</div>{" "}
         <div className="text-tertiary ">{t("myServices.services")}</div>
@@ -16,7 +16,7 @@ export default function MyServicesSection() {
         <div className="grid md:grid-cols-2 gap-4 mx-auto">
           <div className="bg-primary p-10 flex flex-col justify-center items-center rounded-lg">
             <span>
-              <IconSelect icon="frontend" className="fill-tertiary " />
+              <IconSelect icon="frontend" classNames="fill-tertiary " />
             </span>
             <h3 className="mt-4 font-bold text-xl  ">
               {t("myServices.frontEndTitle")}
@@ -27,7 +27,7 @@ export default function MyServicesSection() {
           </div>
           <div className="bg-primary p-10 flex flex-col justify-center items-center rounded-lg">
             <span>
-              <IconSelect icon="backend" className="fill-tertiary  " />
+              <IconSelect icon="backend" classNames="fill-tertiary  " />
             </span>
             <h3 className="mt-4 font-bold text-xl">
               {t("myServices.backEndTitle")}

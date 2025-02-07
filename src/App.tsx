@@ -1,5 +1,7 @@
 import "./App.css";
 import Background from "./components/background/background";
+import Footer from "./components/footer/footer";
+import Contact from "./components/sections/contact/contact";
 import MyServicesSection from "./components/sections/myServicesSection/myServices";
 import MySkillsSection from "./components/sections/mySkillsSection/mySkillsSection";
 import PresentationSection from "./components/sections/presentation/presentation";
@@ -11,10 +13,14 @@ function App() {
       <div className="font-mono">
         <Background />
         <Layout>
-          <PresentationSection />
+          <div className="2xl:min-h-[62vh] min-h-[100vh] flex flex-col justify-center items-center">
+            <PresentationSection />
+          </div>
           <MyServicesSection />
           <RecentProjectsSection />
-          <MySkillsSection/>
+          <MySkillsSection />
+          <Contact />
+          <Footer />
         </Layout>
       </div>
     </>
