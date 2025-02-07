@@ -46,7 +46,7 @@ export const socialMediaLinks: ISocialMediaLinks[] = [
 export const projects: IProject[] = [
     {
         title: "FunFit",
-        description: "Descripción del proyecto 1",
+        description: "Sistema ecommerce de venta de productos saludables, con sistema de administración de productos, ventas y usuarios.",
         image: "/common/static/images/projects/funfit.webp",
         link: "/project1",
         business: "FunFit"
