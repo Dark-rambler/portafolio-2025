@@ -44,11 +44,11 @@ export default function PresentationSection() {
               <div>
                 <div className="bigHexagon bg-tertiary/50 md:bg-transparent flex justify-center items-center "></div>
                 <div className="h-20 overflow-hidden ">
-                  <div className="bigHexagonReflex bg-tertiary/50 h-4 flex justify-center items-center"></div>
+                  {/* <div className="bigHexagonReflex bg-tertiary/50 h-4 flex justify-center items-center"></div> */}
                 </div>
               </div>
             </section>
-            <h2 className="text-quaternary text-2xl mt-2">
+            <h2 className="text-quaternary text-2xl md:mt-2 -mt-14 ">
               {t("labels.position")}
             </h2>
             <div className="my-4">
@@ -88,8 +88,7 @@ export default function PresentationSection() {
             className="md:flex md:justify-center md:items-center hidden overflow-hidden md:h-full "
           >
             <div>
-              <div className="bigHexagon bg-tertiary/50 flex justify-center items-center">
-              </div>
+              <div className="bigHexagon bg-tertiary/50 flex justify-center items-center"></div>
               <div className="h-16 overflow-hidden">
                 <div className="bigHexagonReflex bg-tertiary/50 flex justify-center items-center"></div>
               </div>
