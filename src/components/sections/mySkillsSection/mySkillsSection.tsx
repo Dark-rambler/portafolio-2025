@@ -17,7 +17,7 @@ export default function MySkillsSection() {
         <div className="me-2"> {t("mySkills.my")}</div>{" "}
         <div className="text-tertiary ">{t("mySkills.skills")}</div>
       </div>
-      <h1 className="text-quaternary mt-4 text-5xl overflow-visible md:h-14 font-semibold">
+      <h1 className="text-quaternary mt-4 md:text-5xl text-4xl overflow-visible md:h-14 font-semibold">
         {t("mySkills.title")}
       </h1>
       <div className="grid grid-cols-3 md:grid-cols-5 gap-4 mt-8">
