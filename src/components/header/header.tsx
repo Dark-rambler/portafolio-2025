@@ -21,7 +21,7 @@ export default function Header() {
     <div className="fixed w-full  z-40 top-0">
       <div
         className={
-          "bg-secondary lg:bg-primary text-white z-40 flex justify-between items-center h-32 md:pe-80 ps-5 py-5"
+          "bg-secondary lg:bg-primary text-white z-40 flex justify-between items-center h-32 lg:pe-80 ps-5 py-5"
         }
       >
         <div className="h-full flex items-center">
@@ -33,7 +33,7 @@ export default function Header() {
             {labels.pageName}
           </h2>
         </div>
-        <div className=" hidden md:visible md:text-quaternary md:bg-primary md:h-full md:flex md:justify-center md:items-center">
+        <div className=" hidden lg:visible lg:text-quaternary lg:bg-primary lg:h-full lg:flex lg:justify-center lg:items-center">
           {navMenuItems.map((item, index) => {
             return (
               <a
@@ -45,7 +45,7 @@ export default function Header() {
               </a>
             );
           })}
-          <span className="ms-5 hidden md:flex items-center">
+          <span className="ms-5 hidden lg:flex items-center">
             <ConfigProvider
               theme={{
                 components: {
@@ -87,7 +87,7 @@ export default function Header() {
 
         <span
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden  me-10 hover:text-tertiary transition-all duration-300 ease-out"
+          className="lg:hidden  me-10 hover:text-tertiary transition-all duration-300 ease-out"
         >
           <IconSelect icon={menuOpen ? "close" : "menu"} />
         </span>
@@ -95,7 +95,7 @@ export default function Header() {
       <div
         className={
           menuOpen
-            ? "md:hidden absolute top-32 right-0 bg-secondary text-white w-full  flex flex-col transition-all  duration-300 ease-out -z-10"
+            ? "lg:hidden absolute top-32 right-0 bg-secondary text-white w-full  flex flex-col transition-all  duration-300 ease-out -z-10"
             : " absolute min-h-40 -top-44 right-0 bg-secondary text-white w-full flex flex-col transition-all duration-300 ease-out  -z-10 "
         }
       >

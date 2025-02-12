@@ -24,7 +24,7 @@ export default function PresentationSection() {
   };
 
   return (
-    <article className="py-24 md:px-24 px-12 " id="presentation">
+    <article className="py-24 lg:px-24 px-12 " id="presentation">
       <div className=" ">
         <QueueAnim
           delay={600}

@@ -17,7 +17,7 @@ export default function RecentProjectsSection() {
       <div className="flex justify-center">
         <div className="mt-3">{t("recentProjects.title")}</div>
       </div>
-      <div className="mt-10 hidden md:block">
+      <div className="mt-10 hidden lg:block">
         <Carousel
           centerMode={true}
           centerPadding="100px "
@@ -52,7 +52,7 @@ export default function RecentProjectsSection() {
           ))}
         </Carousel>
       </div>
-      <div className="mt-10 md:hidden block">
+      <div className="mt-10 lg:hidden block">
         <Carousel
           centerMode={true}
           centerPadding="0px "

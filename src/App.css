@@ -120,7 +120,7 @@ body {
   display: none; /* Elimina el scroll de navegadores basados en WebKit */
 }
 
-.Carousel .ant-carousel {
+/* .Carousel .ant-carousel {
   .slick-dots {
     position: static;
     margin-top: 20px;
@@ -131,9 +131,9 @@ body {
       background-color: gray;
     }
   }
-}
+} */
 
-.ant-carousel .slick-prev,
+/* .ant-carousel .slick-prev,
 .ant-carousel .slick-next,
 .ant-carousel .slick-prev:hover,
 .ant-carousel .slick-next:hover,
@@ -157,7 +157,7 @@ body {
 
 .slick-arrow.slick-next {
   font-size: 20px !important;
-}
+} */
 
 .required {
   color: red;
