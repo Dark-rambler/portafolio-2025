@@ -58,21 +58,21 @@ export const projects: IProject[] = [
     },
     {
         title: "EndeSys ERP",
-        description: "Descripción del proyecto 2",
+        description: "Sistema de administración de recursos empresariales, con módulos de ventas, compras, inventario, contabilidad, presupuestos y recursos humanos.",
         image: "/common/static/images/projects/endeErp.webp",
         link: "/project2",
         business: "Ende Servicios y Construcciones"
     },
     {
         title: "TechoBol sistema de finanzas",
-        description: "Descripción del proyecto 3",
+        description: "Sistema de administración de finanzas, con módulos de ingresos, egresos, presupuestos y reportes.",
         image: "/common/static/images/projects/finanzaSys.webp",
         link: "/project3",
         business: "TechoBol"
     },
     {
         title: "Sistema de envio masivo de mensajes",
-        description: "Descripción del proyecto 4",
+        description: "Sistema de envio masivo de mensajes, con módulos de envio de mensajes, reportes y administración de usuarios.",
         image: "/common/static/images/projects/agilSoftSys.webp",
         link: "/project4",
         business: "AgilSoft"

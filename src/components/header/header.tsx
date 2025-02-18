@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { labels } from "../../constants/labels";
 import { navMenuItems } from "../../constants/staticList";
 import IconSelect from "../IconSelect/iconSelect";
@@ -6,9 +6,20 @@ import i18next from "i18next";
 import { ConfigProvider, Select, Space } from "antd";
 import { useTranslation } from "react-i18next";
 
-export default function Header() {
+interface NavMenuItem {
+  isTouched: boolean;
+  setTouch: (value: boolean) => void;
+}
+
+export default function Header({ isTouched, setTouch }: NavMenuItem) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [t] = useTranslation("global");
+
+  useEffect(() => {
+    if (!isTouched) {
+      setMenuOpen(false);
+    }
+  }, [isTouched]);
 
   const options = [
     { value: "es", label: "Spanish", emoji: "🇪🇸", desc: "Spanish" },
@@ -16,6 +27,16 @@ export default function Header() {
   ];
 
   const onChange = (value: string) => i18next.changeLanguage(value);
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+    setTouch(false);
+  };
+
+  const openMenu = () => {
+    setMenuOpen(true);
+    setTouch(true);
+  };
 
   return (
     <div className="fixed w-full  z-40 top-0">
@@ -86,7 +107,7 @@ export default function Header() {
         </div>
 
         <span
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={() => (menuOpen ? closeMenu() : openMenu())}
           className="lg:hidden  me-10 hover:text-tertiary transition-all duration-300 ease-out"
         >
           <IconSelect icon={menuOpen ? "close" : "menu"} />

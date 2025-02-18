@@ -30,7 +30,7 @@ export default function RecentProjectsSection() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className=" p-5 cursor-pointer  hover:scale-110 transform transition duration-500 ease-in-out"
+              className=" p-5 cursor-pointer group hover:scale-110 transform transition duration-500 ease-in-out"
             >
               <div className="  rounded-lg flex justify-center items-center">
                 <img
@@ -39,14 +39,19 @@ export default function RecentProjectsSection() {
                 />
               </div>
               <p
-                className="text-center absolute h-24 
+                className="text-center absolute h-12 group-hover:bg-primary/75 
+                group-hover:h-32 transition-all duration-300 ease-out   
                 bottom-2 bg-primary/60 w-full text-quaternary font-semibold
                 flex pt-2 items-center flex-col text-lg "
               >
                 {project.title}
                 <p
-                  className="text-center mt-2 me-10 px-4 text-quaternary text-sm font-normal"
-                >{project.description}</p>
+                  className="text-center hidden group-hover:flex transition-all
+                  duration-300 ease-out
+                mt-3 me-10 px-4 text-quaternary text-sm font-normal"
+                >
+                  {project.description}
+                </p>
               </p>
             </div>
           ))}
