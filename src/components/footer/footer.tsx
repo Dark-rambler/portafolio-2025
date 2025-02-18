@@ -1,11 +1,14 @@
+import { useTranslation } from "react-i18next";
+import { socialMediaLinks } from "../../constants/staticList";
 import IconSelect from "../IconSelect/iconSelect";
 
 export default function Footer() {
+  const {t} = useTranslation("global");
   return (
     <div className="bg-secondary z-50 py-2 text-white">
       <div className="flex justify-center items-center h-16">
         <p className="text-center">
-          © {new Date().getFullYear()} - Hecho con ❤️ por{" "}
+          © {new Date().getFullYear()} - {t("footer.rights")}{" "}
           <a
             href=""
             className="hover:text-tertiary transition-all duration-300 ease-out"
@@ -15,26 +18,20 @@ export default function Footer() {
         </p>
       </div>
       <div className="flex justify-center items-center h-12">
-        <div className="flex items-center justify-center space-x-4">
-          <a
-            href=""
-            className="hover:text-tertiary transition-all duration-300 ease-out"
-          >
-            <IconSelect icon="instagram" />
-          </a>
-          <a
-            href=""
-            className="hover:text-tertiary transition-all duration-300 ease-out"
-          >
-            <IconSelect icon="linkedin" />
-          </a>
-          <a
-            href=""
-            className="hover:text-tertiary transition-all duration-300 ease-out"
-          >
-            <IconSelect icon="github" />
-          </a>
-        </div>
+          <div className="flex items-center justify-center space-x-4">
+            {
+              socialMediaLinks.map((socialMedia, index) => (
+                <a
+                  key={index}
+                  href={socialMedia.link}
+                  target="_blank"
+                  className="hover:text-tertiary transition-all duration-300 ease-out"
+                >
+                  <IconSelect icon={socialMedia.icon} />
+                </a>
+              ))
+            }
+          </div>
       </div>
       <div className="flex justify-center items-center h-8">
         <a

@@ -21,7 +21,7 @@
   },
   "informationPage": {
     "hi": "Hola,",
-    "itsMe": "Mi nombre es",  
+    "itsMe": "Mi nombre es",
     "description": "Soy un desarrollador de software con experiencia en el desarrollo de aplicaciones web. Me apasiona la tecnología y la programación, y siempre estoy buscando aprender cosas nuevas.",
     "findMe": "Sígueme en"
   },
@@ -43,5 +43,19 @@
     "my": "Mis",
     "skills": "habilidades",
     "title": "Tecnologías y habilidades"
+  },
+  "contactMe": {
+    "contact": "Contáctame",
+    "title": "¿Tienes un proyecto en mente?",
+    "description": "Si tienes un proyecto en mente o simplemente quieres saludar, no dudes en contactarme. Estoy disponible para trabajar en proyectos interesantes y desafiantes.",
+    "form": {
+      "name": "Nombre",
+      "affair": "Asunto",
+      "message": "Mensaje",
+      "sendMessage": "Enviar Mensaje"
+    }
+  },
+  "footer": {
+    "rights": "Hecho con ❤️ por"
   }
 }

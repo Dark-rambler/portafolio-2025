@@ -43,5 +43,19 @@
     "my": "My",
     "skills": "skills",
     "title": "Technologies and Skills"
+  },
+  "contactMe": {
+    "contact": "Contact",
+    "title": "Do you have a project in mind?",
+    "description": "If you have a project in mind or just want to say hello, feel free to contact me. I'm available to work on interesting and challenging projects.",
+    "form": {
+      "name": "Name",
+      "affair": "Affair",
+      "message": "Message",
+      "sendMessage": "Send Message"
+    }
+  },
+  "footer": {
+    "rights": "Made with ❤️ by"
   }
 }

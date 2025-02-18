@@ -2,11 +2,15 @@ import { useState } from "react";
 import { Input, message } from "antd";
 import IconSelect from "../../IconSelect/iconSelect";
 import TextArea from "antd/es/input/TextArea";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", subject: "", message: "" });
+  const [t] = useTranslation("global");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
@@ -27,16 +31,14 @@ export default function Contact() {
   };
 
   return (
-    <div className="bg-primary p-12 md:px-24 text-white">
-      <h1 className="text-2xl font-bold">Contáctame</h1>
-
+    <div className="bg-primary p-12 md:px-24 text-white" id="contact">
+      <h1 className="text-2xl font-bold">{t("contactMe.contact")}</h1>
       <form className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <label htmlFor="name" className="block mb-1 ">
-
-            Nombre
+            {t("contactMe.form.name")}
           </label>
-          <Input 
+          <Input
             id="name"
             name="name"
             value={form.name}
@@ -45,7 +47,7 @@ export default function Contact() {
         </div>
         <div>
           <label htmlFor="subject" className="block mb-1">
-            Asunto
+            {t("contactMe.form.affair")}
           </label>
           <Input
             id="subject"
@@ -56,7 +58,7 @@ export default function Contact() {
         </div>
         <div className="md:col-span-2">
           <label htmlFor="message" className="block mb-1">
-            Mensaje
+            {t("contactMe.form.message")}
           </label>
           <TextArea
             id="message"
@@ -77,7 +79,7 @@ export default function Contact() {
               classNames="text-white me-2"
               color="currentColor"
             />
-            Enviar mensaje
+            {t("contactMe.form.sendMessage")}
           </button>
         </div>
       </form>

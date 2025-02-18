@@ -21,6 +21,11 @@ export const navMenuItems: INavMenuItems[] = [
         translation: "skills",
         link: "#skills",
     },
+    {
+        label: "Contacto",
+        translation: "contact",
+        link: "#contact",
+    },
     
 
 ];
